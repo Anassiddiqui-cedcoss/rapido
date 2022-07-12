@@ -1,22 +1,40 @@
 <style>
-    .red-text {
-      color: #FF0000;
+    .injected-text {
+      margin-bottom: -25px;
+      text-align: center;
     }
-    .green-text {
-      color:#00FF00;
+  
+    .box {
+      border-style: solid;
+      border-color: black;
+      border-width: 5px;
+      text-align: center;
     }
-    .dodger-blue-text {
-      color: #1E90FF;
+  
+    .yellow-box {
+      background-color: yellow;
+      padding: 10px;
     }
-    .orange-text {
-      color: #FFA500;
+  
+    .red-box {
+      background-color: crimson;
+      color: #fff;
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+    }
+  
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      margin: 40px 20px 20px 40px;
+      
     }
   </style>
+  <h5 class="injected-text">margin</h5>
   
-  <h1 class="red-text">I am red!</h1>
-  
-  <h1 class="green-text">I am green!</h1>
-  
-  <h1 class="dodger-blue-text">I am dodger blue!</h1>
-  
-  <h1 class="orange-text">I am orange!</h1>
+  <div class="box yellow-box">
+    <h5 class="box red-box">padding</h5>
+    <h5 class="box blue-box">padding</h5>
+  </div>
