@@ -5,25 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
-    <link rel="stylesheet" href="style1.css" />
+    <style>
+        *{
+            background-color: burlywood;
+    
+        }
+        th{
+            text-align: left;
+        }
+    </style>
   </head>
   <body>
-    <div class="container">
-     <form class="name">First name<input type="text" placeholder="enter your first name" /></form>
-      <form class="last">Last name<input type="text" placeholder="enter your last name" /></form>
-      <form class="mail">E-mail<input type="email" placeholder="enter your E-mail" /> </form>
-      <form class="number">Mobile no<input type="number" placeholder="enter your mobile number" /></form>
-      <form class="gender">Gender<input type="radio" name="Gender" value="male" />
-        <input type="radio" name="gender" value="female" />
+    <h1>KM custom HTML form Example Using Applescript</h1>
+    <table border=1>
+      <form action="">
+        <tr style="border-style: solid ; border-width: 1px ;">
+          <th>NAME:</th>
+          <td>
+            <form><input type="text" /></form>
+          </td>
+        </tr>
+        <tr>
+          <th>E-MAIL:</th>
+          <td>
+            <form><input type="email" /></form>
+          </td>
+        </tr>
+        <tr>
+          <th>PASSWORD:</th>
+          <td>
+            <form><input type="password" /></form>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            APPROVAL REQUIRED:
+            <br />
+          </th>
+          <td>
+            <form>
+              <input type="checkbox" />
+              Do You Approve ?
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th>PICK YOUR FAVOURITE:</th>
+          <td>
+            <input type="radio" id="choice1" name="age" value="30" />
+            <label for="age1">choice1</label>
+            <br />
+            <input type="radio" id="choice2" name="age" value="60" />
+            <label for="age2">choice2</label>
+            <br />
+            <input type="radio" id="choice3" name="age" value="100" />
+            <label for="age3">choice3</label>
+            <br />
+          </td>
+        </tr>
+        <tr>
+            <th>POPUP MENU:</th>
+            <td>
+              <label for=""></label>
+              <select name="popup" id="popup">
+              <option value="a">texas--tx</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>LIST:</th>
+            <td>
+                <label for=""></label>
+                <select id="country" name="country">
+                  <option value="australia">california--CA</option>
+                  <option value="canada">new york</option>
+                  <option value="usa">USA</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <th>field ignored by:</th>
+            <td>
+              <form><input type="text" /></form>
+            </td>
+          </tr>
+          <tr>
+            <th>TEXT AREA:</th>
+            <td>
+              <form><textarea name="" id="" cols="30" rows="10"></textarea></form>
+            </td>
+          </tr>
       </form>
-      <form class="date">date of birth <input type="text" placeholder="DD/MM/YY" /> </form>
-      <form class="address">Address<input type="text" placeholder="enter your Address" /></form>
-      <form class="city">city<input type="text" placeholder="enter your name" /> </form>
-      <form class="pin">area pin <input type="text" placeholder="enter your name" /> </form>
-      <form class="state"> state<input type="text" placeholder="enter your name" /></form>
-      <form class="qualification">qualification<input type="text" placeholder="enter your name" /> </form>
-      <form class="special">specialization<input type="text" placeholder="enter your name" /></form>
-      <form class="password">password<input type="text" placeholder="enter your name" /> </form>
-    </div>
+    </table>
+    <button>save</button><button>cancel</button><button>resize</button>
   </body>
 </html>
