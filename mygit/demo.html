@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <style>
+      .container {
+        width: 15%;
+        height: 12vh;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content:space-between;
+      }
+      .containerplus {
+          
+          border-radius: 10px;
+          width: 33.3%;
+          height: 12vh;
+        }
+        .blank {
+          padding-left: 15%;
+        width: 33.3%;
+        height: 12vh;
+      }
+      .containerminus {
+        border-radius: 10px;
+        width: 33.3%;
+        height: 12vh;
+      }
+      .btn{
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    <script>
+        function increment(){
+    var val = document.getElementById('text').innerHTML;
+    val =parseInt(val) + 1;
+    
+    document.getElementById('text').innerHTML =val;
+}
+function decrement(){
+    var val = document.getElementById('text').innerHTML;
+    val =parseInt(val) - 1;
+    
+    document.getElementById('text').innerHTML =val;
+}
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerplus">
+        <button  class=btn onclick="increment()">+</button>
+      </div>
+      <div class="blank">
+        <h1 id="text">0</h1>
+      </div>
+      <div class="containerminus">
+        <button class="btn"  onclick="decrement()">-</button>
+      </div>
+    </div>
+  </body>
+</html>
