@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="product.js"></script>
+</head>
+<body>
+    <div class="container">
+  <!-- <form action="/action_page.php"> -->
+    <div class="row">
+      <div class="col-25">
+        <label for="product">Product Id</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="pid" name="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Product Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pname" name="">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="price">Product Price</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="pprice" name="">
+        </div>
+      </div>
+    
+    <div class="row">
+      
+       <button class="btn" onclick="myresult()">ADD PRODUCT</button>
+    </div>
+  </form>
+</div>
+<div >
+    <table id="result">
+        <tr>
+            <th>product id</th>
+            <th>product Name</th>
+            <th>product Price</th>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
