@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    height: 15vh;
+}
+li {
+list-style: none;
+}
+#details {
+width: 100%;
+
+}
+#details table {
+
+width: 100%;
+
+}
+td {
+text-align: center;
+}
