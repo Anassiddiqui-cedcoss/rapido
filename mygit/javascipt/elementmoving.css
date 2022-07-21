@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+
+    width: 500px;
+    align-items: baseline;
+  }
+  .left {
+
+    width: 70px;
+  }
+  .center {
+    
+    width: 35px;
+    height: 20px;
+  }
+  .right {
+    width: 70px;
+    
+  }
